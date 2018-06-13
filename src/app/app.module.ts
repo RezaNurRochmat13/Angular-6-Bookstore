@@ -1,3 +1,4 @@
+import { FooterComponent } from './shared/components/footer/footer.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
@@ -9,7 +10,8 @@ import { BooksModule } from './applications/books/books.module';
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
