@@ -1,16 +1,20 @@
+import { HeaderComponent } from './shared/components/header/header.component';
+import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { BaseModule } from './base/base.module';
-
 import { AppComponent } from './app.component';
+import { BooksModule } from './applications/books/books.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot([]),
+    BooksModule
   ],
   providers: [],
   bootstrap: [AppComponent]
