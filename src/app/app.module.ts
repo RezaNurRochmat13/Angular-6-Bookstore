@@ -6,6 +6,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { BooksModule } from './applications/books/books.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { BooksModule } from './applications/books/books.module';
   imports: [
     BrowserModule,
     RouterModule.forRoot([]),
-    BooksModule
+    BooksModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
