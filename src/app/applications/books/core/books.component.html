@@ -2,6 +2,7 @@
  <div class="panel panel-default">
     <div class="panel-heading">List of books</div>
     <div class="panel-body">
+        <a class="btn btn-success">Add New</a>
       <table class="table table-striped table-hover">
         <thead>
           <tr>
@@ -9,6 +10,7 @@
             <th scope="col">Book Writer</th>
             <th scope="col">Book Publisher</th>
             <th scope="col">Book Description</th>
+            <th>Action</th>
           </tr>
         </thead>
         <tbody>
@@ -17,6 +19,10 @@
             <td>{{ book.book_writer }}</td>
             <td>{{ book.book_publisher }}</td>
             <td>{{ book.book_description }}</td>
+            <td witdh="150px">
+              <a class="btn btn-info btn-sm">Edit</a>
+              <a class="btn btn-danger btn-sm">Delete</a>
+            </td>
           </tr>
         </tbody>
       </table>
