@@ -20,8 +20,11 @@ constructor(
  * @returns Observable Value
  * @memberof BooksService
  */
-public getAllDataBooks(): Observable<any> {
+ public getAllDataBooks(): Observable<any> {
   return this.httpService.get(this.BOOKS_URL_API);
-}
+ }
+ public saveBooks(body: any): Observable<any> {
+  return this.httpService.post(this.BOOKS_URL_API, body);
+ }
 
 }
